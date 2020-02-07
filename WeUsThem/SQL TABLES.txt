@@ -1,0 +1,33 @@
+CONTACTS TABLE
+
+CREATE TABLE contact(
+  UserID int NOT NULL  PRIMARY KEY AUTO_INCREMENT,
+   Fname  VARCHAR(20) NOT NULL
+  ,Lname  VARCHAR(20) NOT NULL
+  ,Phn    VARCHAR(12) NOT NULL
+  ,State  VARCHAR(2) NOT NULL
+  ,Email  VARCHAR(30) NOT NULL
+  ,Reason VARCHAR(30) NOT NULL
+  ,Msg    VARCHAR(1000) NOT NULL
+);
+
+SYMBOL TABLE
+
+CREATE TABLE stocks(
+   Symbol         VARCHAR(7) NOT NULL PRIMARY KEY
+  ,Current_Price  NUMERIC(8,4) NOT NULL
+  ,Date           DATE  NOT NULL
+  ,Time           VARCHAR(9) NOT NULL
+  ,ChangeMM         NUMERIC(11,9) NOT NULL
+  ,Open           NUMERIC(7,3) NOT NULL
+  ,High           NUMERIC(8,4) NOT NULL
+  ,Low            NUMERIC(8,4) NOT NULL
+  ,Volume         INTEGER  NOT NULL
+  ,Trade_Date     VARCHAR(30)
+  ,Purchase_Price VARCHAR(30)
+  ,Quantity       VARCHAR(30)
+  ,Commission     VARCHAR(30)
+  ,High_Limit     VARCHAR(30)
+  ,Low_Limit      VARCHAR(30)
+  ,Comment        VARCHAR(30)
+);
